@@ -5,8 +5,11 @@
   <title>Doyle Draw</title>
 </head>
 <body>
-<canvas id="draw" width="800" height="800"></canvas>
-
+<div>
+  <div id="container">
+    Doyle Draw
+    <canvas id="draw" width="800" height="800"></canvas>
+</div>
 
 <script>
 
@@ -126,6 +129,16 @@ document.body.addEventListener("touchmove", function (e) {
 <style>
   html, body {
     margin: 0;
+  }
+
+  #background {
+    position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: -1;
+   overflow: hidden;
   }
 </style>
 
