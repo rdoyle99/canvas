@@ -5,7 +5,7 @@
   <title>Doyle Draw</title>
 </head>
 <body>
-<div>
+<div id="fixed">
   <div id="container">
     Doyle Draw
     <canvas id="draw" width="800" height="800"></canvas>
@@ -124,6 +124,15 @@ document.body.addEventListener("touchmove", function (e) {
 }, false);
 
 
+
+var fixed = document.getElementById('fixed');
+
+fixed.addEventListener('touchmove', function(e) {
+
+        e.preventDefault();
+
+}, false);
+
 </script>
 
 <style>
@@ -137,7 +146,7 @@ document.body.addEventListener("touchmove", function (e) {
   }
 
   body {
-  position: relative;
+  position: fixed;
 }
 
   #background {
